@@ -1,0 +1,7 @@
+par(mfrow=c(2,2))
+plot(NEI$Emissions[NEI$year==1999],xlab = "", ylab="Emissions", main = "1999")
+plot(NEI$Emissions[NEI$year==2002],xlab = "", ylab="Emissions", main = "2002")
+plot(NEI$Emissions[NEI$year==2005],xlab = "", ylab="Emissions", main = "2005")
+plot(NEI$Emissions[NEI$year==2008],xlab = "", ylab="Emissions", main = "2008")
+dev.copy(png,"Plot1.png")
+dev.off()
